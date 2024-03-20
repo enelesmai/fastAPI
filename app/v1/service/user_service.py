@@ -4,6 +4,7 @@ from passlib.context import CryptContext
 
 from app.v1.model.user_model import User as UserModel
 from app.v1.schema import user_schema
+from app.v1.service.auth_service import get_password_hash
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
