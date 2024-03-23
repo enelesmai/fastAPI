@@ -93,7 +93,7 @@ def test_login():
         headers={
             'Content-Type': 'application/x-www-form-urlencoded'
         },
-        allow_redirects=True
+        follow_redirects=True
     )
 
     assert response.status_code == 200, response.text
